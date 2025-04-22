@@ -1,0 +1,211 @@
+/* style.css */
+
+:root {
+    --light-bg: #fdfdfd;
+    --dark-bg: #1e1e1e;
+    --light-text: #111;
+    --dark-text: #eee;
+    --accent: #8e44ad;
+    --font-body: 'Rubik', sans-serif;
+  }
+  
+  body {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+    font-family: var(--font-body);
+    margin: 0;
+    line-height: 1.6;
+  }
+  
+  /* Global link styling */
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  a:visited {
+    color: purple;
+  }
+  
+  a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+  
+  /* Scoped nav link styling */
+  nav a {
+    color: white;
+  }
+  
+  nav a:visited {
+    color: lightgray;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  #extra a:visited {
+    color: purple;
+  }
+  
+  header, footer {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1#page-title {
+    font-family: 'Rubik Moonrocks', cursive;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px #000;
+    font-variant: small-caps;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  main {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  ul li ul li::marker {
+    content: '\2728';
+    color: var(--accent);
+  }
+  
+  form {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  input, button {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    flex-shrink: 0;
+  }
+  
+  button:hover {
+    background-color: var(--accent);
+    color: white;
+    cursor: pointer;
+  }
+  
+  fieldset {
+    border: 2px dashed var(--accent);
+  }
+  
+  legend {
+    padding: 0 10px;
+    font-weight: bold;
+  }
+  
+  p::before {
+    content: '💡';
+    margin-right: 0.5em;
+  }
+  
+  /* Flexbox Section */
+  #skills ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Display override */
+  h2 {
+    display: inline;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+  }
+  
+  /* Advanced typography */
+  h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(to right, #8e44ad, #3498db);
+    margin-top: 0.3rem;
+  }
+  
+  /* Fancy selectors */
+  nav ul > li + li {
+    border-left: 2px solid white;
+    padding-left: 10px;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --light-bg: #1e1e1e;
+      --dark-bg: #fdfdfd;
+      --light-text: #eee;
+      --dark-text: #111;
+    }
+  
+    form {
+      background-color: #2a2a2a;
+    }
+  
+    form label,
+    legend {
+      color: #fff;
+    }
+  
+    input,
+    button,
+    select,
+    textarea {
+      background-color: #1e1e1e;
+      color: #fff;
+      border: 1px solid #555;
+    }
+  
+    input[type="color"] {
+      background-color: #fff;
+    }
+  
+    fieldset {
+      border-color: var(--accent);
+    }
+  }
+
+  form.success {
+    background-color: #d4edda;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    form.success {
+      background-color: #2e4e2e;
+    }
+  }
+  

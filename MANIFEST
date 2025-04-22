@@ -1,0 +1,55 @@
+ALL students complete this section:
+
+CHOICES
+(You are allowed to choose a feature for some of the requirements. Indicate on the line
+ which one you chose using the letter provided in the spec. Separate the letters with a comma
+ In some cases you will also need to tell us what you did)
+-------
+9a. text-shadow on h1 and gradient line under h2 using pseudo-elements  
+9b. Used clamp() for responsive h2 font size  
+12. a,c (used background gradients and transforms via hover/interactive styles)  
+18. b (used ::before pseudo-element to add emoji to all paragraphs)  
+19. a,b,c (gradients, text-shadow, box-shadow, transforms, etc.)
+
+JAVASCRIPT
+(Please tells us what the JavaScript does e.g. "click on the green button and it does the following...")
+----------
+When the user submits the form:
+- If the name field is empty, it shows an alert
+- If valid, it changes the form background color based on light/dark mode (green or dark green)
+- Displays an alert thanking the user
+- Updates the page title with a personalized greeting using DOM manipulation
+
+NOTES TO STAFF
+(If there is anything you need to tell us, please use the section below)
+---------------
+Dark mode styles for form and text are implemented using a `@media (prefers-color-scheme: dark)` block  
+JavaScript includes adaptive color response based on system theme  
+All requirements are implemented in index.html, style.css, and script.js in the same folder
+
+ONLY modify this section if you implemented the requirements across 2 or more files.
+Otherwise, submit this file as is. PLEASE do not delete anything from this file.
+
+REQUIREMENT LOCATION
+(After the period, hit TAB and then enter the HTML page name where the requirement
+ was implemented)
+---------------------
+ 2. index.html 
+ 3. index.html
+ 4. index.html
+ 5. index.html
+ 6. index.html
+ 7. index.html
+ 8. index.html
+ 9. index.html
+10. index.html
+11. index.html
+12. index.html
+13. index.html
+14. index.html
+15. index.html
+16. index.html
+17. index.html
+18. index.html
+19. index.html
+20. index.html
